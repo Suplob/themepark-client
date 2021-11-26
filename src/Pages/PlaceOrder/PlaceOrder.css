@@ -1,0 +1,10 @@
+.ride-wrapper {
+  height: 100vh;
+}
+
+.ride-wrapper img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 20px;
+  height: 50vh;
+}

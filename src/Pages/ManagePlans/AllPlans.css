@@ -1,0 +1,26 @@
+.drop-btn {
+  background-color: red;
+  border-radius: 5px;
+  padding: 7px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.update-btn {
+  background-color: green;
+  border-radius: 5px;
+  padding: 7px;
+  color: white;
+  font-size: 17px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.mb-28rem {
+  margin-bottom: 28rem;
+}
+
+.mb-6rem {
+  margin-bottom: 6rem;
+}
