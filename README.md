@@ -21,6 +21,8 @@ A complete full stack responsive website with CRUD operations made with ReactJS 
 - Bootstrap
 - React Hook Form
 - Firebase Authentication
+- NodeJS
+- ExpressJS
 
 ## How to clone this repository
 
