@@ -1,6 +1,7 @@
 # Theme Park
 
 Link to [live site](https://theme-park-bac35.web.app/home)
+Link to [backend code](https://github.com/Suplob/themepark-server)
 
 A complete full stack responsive website with CRUD operations made with ReactJS and MongoDB. Used Firebase authentication to handle authentication.
 
