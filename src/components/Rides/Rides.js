@@ -13,9 +13,9 @@ const Rides = () => {
   return (
     <div className="bg-light py-5">
       <h1>Our Popular Rides</h1>
-      <div className="row container mx-auto" id="card-wrapper">
+      <div className="row container mx-auto" id="card-wrapper ">
         {rides.map((ride) => (
-          <div className="col-12 col-md-6 col-lg-4" key={ride._id}>
+          <div className="col-12 col-md-6 col-lg-4" id="rides" key={ride._id}>
             <div className="card" key={ride._id}>
               <img src={ride.imgLink} alt="Ride" style={{ width: "100%" }} />
               <div className="container">

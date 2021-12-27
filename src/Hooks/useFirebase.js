@@ -37,21 +37,10 @@ const useFirebase = () => {
       });
   };
 
-  //registr
-  const handleEmailPasswordRegister = (email, password, name) => {
-    setName(name);
-    return createUserWithEmailAndPassword(auth, email, password);
-  };
-
   const handleNameCapture = () => {
     updateProfile(auth.currentUser, { displayName: name }).then(() => {
       console.log("name captured");
     });
-  };
-
-  //login
-  const handleLogin = (email, password) => {
-    return signInWithEmailAndPassword(auth, email, password);
   };
 
   useEffect(() => {
@@ -71,8 +60,6 @@ const useFirebase = () => {
     logOut,
     users,
     setUsers,
-    handleEmailPasswordRegister,
-    handleLogin,
     handleNameCapture,
     isLoading,
     setIsLoading,

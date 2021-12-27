@@ -1,12 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import "./ContactUs.css";
 
 const ContactUs = () => {
+  const [messageSuccess, setMessageSuccess] = useState("");
+
   return (
     <section className="ftco-section bg-light mt-5">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-md-6 text-center">
+          <div className="col-md-6 text-center mb-5">
             <h2 className="heading-section ">Contact Us</h2>
           </div>
         </div>
@@ -19,7 +22,7 @@ const ContactUs = () => {
                     <h3 className="mb-4">Get in touch</h3>
                     <div id="form-message-warning" className="mb-4"></div>
                     <div id="form-message-success" className="mb-4">
-                      Your message was sent, thank you!
+                      {messageSuccess && <p>{messageSuccess}</p>}
                     </div>
                     <form method="POST" id="contactForm" name="contactForm">
                       <div className="row">
@@ -74,6 +77,12 @@ const ContactUs = () => {
                               value="Send Message"
                               className="btn-regular "
                               style={{ cursor: "pointer" }}
+                              onClick={() => {
+                                setMessageSuccess(
+                                  "Thank you for contacting us!"
+                                );
+                                console.log(messageSuccess);
+                              }}
                             />
                             <div className="submitting"></div>
                           </div>

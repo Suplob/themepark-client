@@ -11,7 +11,6 @@ const RequestRide = () => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
@@ -27,7 +26,14 @@ const RequestRide = () => {
 
   return (
     <div className="wrapper fadeInDown mb-6rem">
-      <div id="formContent">
+      <div
+        id="formContent"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alighItems: "center",
+        }}
+      >
         <h2 className="active"> Request ride </h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
